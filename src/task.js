@@ -9,6 +9,12 @@ class Task {
 	this.priority = 'medium';
     }
 
+    /**
+     * Sets task priority.
+     * @param {string} priority - The new priority: 'low', 'medium', 'high', 'urgent'.
+     * @returns {boolean} True if priority was set.
+    */
+
     updateStatus(status) {
         const validStatuses = ['todo', 'in-progress', 'done'];
         if (validStatuses.includes(status)) {
